@@ -285,6 +285,8 @@
         <!-- <div class="mobileMenuMargin hide-for-medLarge"></div> -->
         
         <div class="row expanded align-center align-middle mainBcg mainPhotos bcg">
+        
+          <div class="overlay"></div>
           
           <div id="" class="landingContent slideContent small-12 medium-10 columns text-center">
         
@@ -766,21 +768,52 @@
                       <div class="modalContent">
                         <div class="row align-center align-middle">
         
-                          <div class="small-10 medium-8 large-6 columns">
+                          <div class="small-10 large-8 xxlarge-6 columns">
         
                             <h2>About</h2>
                             <p class="lead">I pride myself with honest and effective communication with all of my clients. Trust and integrity are my upmost values and that will be obvious during our conversations. It will be clear that your goals are my goals and I am not satisfied until you are! Providing service excellence and finding creative solutions to roadblocks along the way are my niche. I will ensure that all of your real estate needs are met in a professional and authentic manner while ensuring that the process is as easy and smooth as possible.</p>
                             
                             <!-- TESTIMONIALS 3 -->
-                            <div class="testimonialWrap purpleBcg">
+                            <div class="testimonialWrap">
+                              <div class="halfBorder halfBorderTop"></div>
                               <div class="testimonialContainer">
                                 <div class="testimonialContent">
                                   <p>"Brooke's energetic personality shines through everything she does, including her work. She had a wealth of knowledge to draw from when making important decisions regarding one of our biggest purchases, our home. She continuously went above and beyond our expectations in helping us find the right place. I cannot say enough about how hard she worked when fighting for us as her clients."</p>
                                   <h4 class="text-right">|   Emily W. & Kristijan Z.</h4>
                                 </div>
                               </div>
+                              <div class="halfBorder halfBorderBottom"></div>
                             </div>
                             <!-- TESTIMONIALS 3 -->
+        
+                            <!-- CONTACT ME BUTTON -->
+                            <div class="row align-center align-middle">
+                              <div id="aboutModalContact" class="small-12 medium-6 columns paddingTopS">
+                                <a data-open="contactModal">
+                                  <div class="button expanded">CONTACT ME</div>
+                                </a>
+                              </div>
+                            </div>
+        
+                            <div class="reveal full" id="contactModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        
+                              <div class="modalContent">
+                                <div class="row align-center align-middle">
+                                  <div id="content-well" class="small-10 medium-8 large-6 columns">
+                                    <h2>Contact Me</h2>
+                                    <div id="mrp-container1" class="small-12 columns">
+                                      <h2>selected properties will go here with same hover actions as properties page</h2>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                                  
+                              <button class="close-button" data-close aria-label="Close modal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+        
+                            </div>
+                            <!-- CONTACT ME BUTTON -->
         
                           </div>
         
@@ -969,7 +1002,7 @@
                 <h3>Find more great properties</h3>
               </div>
         
-              <div class="small-12 searchContent">
+              <div class="small-12 columns searchContent">
                 <a data-open="searchModal" class="searchButton button hollow expanded">SEARCH<i class="fi-magnifying-glass menuIcon"></i></a>
               </div>
         
@@ -1546,8 +1579,9 @@
         
         	<div class="small-12 large-10 columns footerContent">
         
-        		<div class="row align-center align-middle">
+        		<div class="row align-center align-middle"><!-- FOOTER LOGO -->
         			<div class="small-12 columns text-center">
+        
         				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 137.137 208.189" style="enable-background:new 0 0 137.137 208.189;" xml:space="preserve" class="footerBareLogo">
         					<path class="grayLogoPart" style="fill:#f5f5f5;" d="M132.724,106.053c-2.946-7.461-7.059-14.005-12.345-19.638c-5.288-5.627-11.556-10.08-18.804-13.365
         						c-6.43-2.91-13.422-4.458-20.92-4.787c-0.953-0.04-1.892-0.139-2.867-0.139c-2.993,0-6.041,0.301-9.152,0.896
@@ -1562,20 +1596,23 @@
         						c0.606-0.271,1.167-0.602,1.763-0.887v-0.096c0.007-0.004,0.011-0.006,0.018-0.008v-13.561
         						C90.434,185.568,56.405,207.273,41.858,185.568z"/>
         				</svg>
+        
         			</div>
-        		</div>
+        		</div><!-- FOOTER LOGO -->
         
         		<div class="row align-spaced align-bottom">
         
-        			<div class="small-12 medium-3 columns text-left show-for-medium">
+        			<div class="small-12 medium-3 columns text-left show-for-medium"><!-- PHOTO -->
         
         				<img src="assets/img/brookeL.png" class="footerBrooke" alt="Brooke Alexander Dexter Associates Realty" title="Brooke Alexander Dexter Associates Realty">
         
-        			</div>
+        			</div><!-- PHOTO -->
         
         			<div class="small-12 medium-9 columns">
         				<div class="row align-spaced align-top">
-        					<div class="small-10 medium-6 columns footerContact">
+        					
+        					<div class="small-10 medium-6 columns footerContact"><!-- CONTACT DETAILS -->
+        						
         						<div class="text-center medium-text-left">
         							<h5>Get in Touch</h5>
         							<h6>Brooke Alexander</h6>
@@ -1585,10 +1622,33 @@
         							<p>Phone: 604-813-1044</p>
         							<p>Office: 604-689-8226</p>
         							<p>Fax: 604-689-8206</p>
-        							<p>Email: brooke@brookealexander.com</p>
-        						</div>
-        					</div>
-        					<div class="small-10 medium-6 columns footerSignUp text-center medium-text-left">
+        							<p>Email: <a data-open="contactModal">brooke@brookealexander.com</a>
+        
+        							<div class="reveal full" id="contactModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        
+        								<div class="modalContent">
+        									<div class="row align-center align-middle">
+        									  <div id="content-well" class="small-10 medium-8 large-6 columns">
+        									    <h2>Contact Me</h2>
+        									    <div id="mrp-container1" class="small-12 columns">
+        									      <h2>selected properties will go here with same hover actions as properties page</h2>
+        									    </div>
+        									  </div>
+        									</div>
+        								</div>
+        								  
+        								<button class="close-button" data-close aria-label="Close modal" type="button">
+        									<span aria-hidden="true">&times;</span>
+        								</button>
+        
+        		                    </div>
+        
+                                </div>
+                                
+                            </div><!-- CONTACT DETAILS -->
+        
+        					<div class="small-10 medium-6 columns footerSignUp text-center medium-text-left"><!-- NEWSLETTER SIGN-UP -->
+        						
         						<h5 class="">Sign-up for my newsletter</h5>
         						
         						<!-- Begin MailChimp Signup Form -->
@@ -1626,7 +1686,9 @@
         						<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         						
         						<!--End mc_embed_signup-->
-        					</div>
+        
+        					</div><!-- NEWSLETTER SIGN-UP -->
+        
         				</div>
         			</div>
         
