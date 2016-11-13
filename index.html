@@ -86,14 +86,14 @@
         
         			<!-- <fieldset id="selectedFields" class=""> -->
         
-        				<div class="small-12 medLarge-3 columns control-holder"><!-- CITY/TOWN -->
+        				<div class="small-12 large-4 columns collapse control-holder"><!-- CITY/TOWN -->
         					<div id="CITY">
         						<!-- <div class="large-label"><h6>City/Town</h6></div> -->
         						<input type="text" id="values_CITY" class="large-control" name="values[CITY]" value="" placeholder="CITY/TOWN">
         					</div>
         				</div>
         
-        				<div class="small-12 medium-3 medLarge-2 columns control-holder"><!-- ASKING PRICE MIN -->
+        				<div class="small-12 medium-3 large-2 columns control-holder"><!-- ASKING PRICE MIN -->
         					<div id="PRICE_from">
         						<!-- <div class="large-label"><h6>Price Min</h6></div> -->
         						<select class="large-control" name="values[PRICE_from]">
@@ -156,7 +156,7 @@
         					</div>
         				</div>
         
-        				<div class="small-12 medium-3 medLarge-2 columns control-holder"><!-- ASKING PRICE MAX -->
+        				<div class="small-12 medium-3 large-2 columns control-holder"><!-- ASKING PRICE MAX -->
         					<div id="PRICE_to">
         						<!-- <div class="large-label"><h6>Price Max</h6></div> -->
         						<select class="large-control" name="values[PRICE_to]">
@@ -219,7 +219,7 @@
         					</div>
         				</div>
         
-        				<div class="small-12 medium-3 medLarge-2 columns control-holder"><!-- TOTAL BEDROOMS -->
+        				<div class="small-12 medium-3 large-2 columns control-holder"><!-- TOTAL BEDROOMS -->
         					<div id="TOTAL_BEDROOMS">
         						<!-- <div class="large-label"><h6>Bed(s)</h6></div> -->
         						<select class="large-control" name="values[TOTAL_BEDROOMS]">
@@ -242,7 +242,7 @@
         					</div>
         				</div>
         
-        				<div class="small-12 medium-3 medLarge-2 columns control-holder"><!-- TOTAL BATHROOMS -->
+        				<div class="small-12 medium-3 large-2 columns control-holder"><!-- TOTAL BATHROOMS -->
         					<div id="TOTAL_BATHS">
         						<!-- <div class="large-label"><h6>Bath(s)</h6></div> -->
         						<select class="large-control" name="values[TOTAL_BATHS]">
@@ -262,13 +262,18 @@
         				<input type="hidden" name="jsonFields" value="{&quot;CITY&quot;:{&quot;description&quot;:&quot;City/Town&quot;,&quot;enumeration&quot;:{},&quot;hide&quot;:false,&quot;input&quot;:&quot;text&quot;,&quot;name&quot;:&quot;CITY&quot;,&quot;type&quot;:&quot;TEXT&quot;},&quot;PRICE_from&quot;:{&quot;description&quot;:&quot;Asking Price Min&quot;,&quot;enumeration&quot;:{&quot;10000&quot;:&quot;$10,000 Min&quot;,&quot;20000&quot;:&quot;$20,000 Min&quot;,&quot;30000&quot;:&quot;$30,000 Min&quot;,&quot;40000&quot;:&quot;$40,000 Min&quot;,&quot;50000&quot;:&quot;$50,000 Min&quot;,&quot;60000&quot;:&quot;$60,000 Min&quot;,&quot;70000&quot;:&quot;$70,000 Min&quot;,&quot;80000&quot;:&quot;$80,000 Min&quot;,&quot;90000&quot;:&quot;$90,000 Min&quot;,&quot;100000&quot;:&quot;$100,000 Min&quot;,&quot;200000&quot;:&quot;$200,000 Min&quot;,&quot;300000&quot;:&quot;$300,000 Min&quot;,&quot;400000&quot;:&quot;$400,000 Min&quot;,&quot;500000&quot;:&quot;$500,000 Min&quot;,&quot;600000&quot;:&quot;$600,000 Min&quot;,&quot;700000&quot;:&quot;$700,000 Min&quot;,&quot;800000&quot;:&quot;$800,000 Min&quot;,&quot;900000&quot;:&quot;$900,000 Min&quot;,&quot;1000000&quot;:&quot;$1,000,000 Min&quot;,&quot;2000000&quot;:&quot;$2,000,000 Min&quot;,&quot;3000000&quot;:&quot;$3,000,000 Min&quot;,&quot;4000000&quot;:&quot;$4,000,000 Min&quot;,&quot;5000000&quot;:&quot;$5,000,000 Min&quot;,&quot;6000000&quot;:&quot;$6,000,000 Min&quot;,&quot;7000000&quot;:&quot;$7,000,000 Min&quot;,&quot;8000000&quot;:&quot;$8,000,000 Min&quot;,&quot;9000000&quot;:&quot;$9,000,000 Min&quot;},&quot;hide&quot;:false,&quot;input&quot;:&quot;select&quot;,&quot;name&quot;:&quot;PRICE_from&quot;,&quot;type&quot;:&quot;FLOAT&quot;},&quot;PRICE_to&quot;:{&quot;description&quot;:&quot;Asking Price Max&quot;,&quot;enumeration&quot;:{&quot;10000&quot;:&quot;$10,000 Max&quot;,&quot;20000&quot;:&quot;$20,000 Max&quot;,&quot;30000&quot;:&quot;$30,000 Max&quot;,&quot;40000&quot;:&quot;$40,000 Max&quot;,&quot;50000&quot;:&quot;$50,000 Max&quot;,&quot;60000&quot;:&quot;$60,000 Max&quot;,&quot;70000&quot;:&quot;$70,000 Max&quot;,&quot;80000&quot;:&quot;$80,000 Max&quot;,&quot;90000&quot;:&quot;$90,000 Max&quot;,&quot;100000&quot;:&quot;$100,000 Max&quot;,&quot;200000&quot;:&quot;$200,000 Max&quot;,&quot;300000&quot;:&quot;$300,000 Max&quot;,&quot;400000&quot;:&quot;$400,000 Max&quot;,&quot;500000&quot;:&quot;$500,000 Max&quot;,&quot;600000&quot;:&quot;$600,000 Max&quot;,&quot;700000&quot;:&quot;$700,000 Max&quot;,&quot;800000&quot;:&quot;$800,000 Max&quot;,&quot;900000&quot;:&quot;$900,000 Max&quot;,&quot;1000000&quot;:&quot;$1,000,000 Max&quot;,&quot;2000000&quot;:&quot;$2,000,000 Max&quot;,&quot;3000000&quot;:&quot;$3,000,000 Max&quot;,&quot;4000000&quot;:&quot;$4,000,000 Max&quot;,&quot;5000000&quot;:&quot;$5,000,000 Max&quot;,&quot;6000000&quot;:&quot;$6,000,000 Max&quot;,&quot;7000000&quot;:&quot;$7,000,000 Max&quot;,&quot;8000000&quot;:&quot;$8,000,000 Max&quot;,&quot;9000000&quot;:&quot;$9,000,000 Max&quot;},&quot;hide&quot;:false,&quot;input&quot;:&quot;select&quot;,&quot;name&quot;:&quot;PRICE_to&quot;,&quot;type&quot;:&quot;FLOAT&quot;},&quot;TOTAL_BEDROOMS&quot;:{&quot;description&quot;:&quot;Bedrooms&quot;,&quot;enumeration&quot;:{&quot;1&quot;:&quot;1 Bedrooms&quot;,&quot;2&quot;:&quot;2 Bedrooms&quot;,&quot;3&quot;:&quot;3 Bedrooms&quot;,&quot;4&quot;:&quot;4 Bedrooms&quot;,&quot;5&quot;:&quot;5 Bedrooms&quot;,&quot;6&quot;:&quot;6 Bedrooms&quot;,&quot;7&quot;:&quot;7 Bedrooms&quot;},&quot;hide&quot;:false,&quot;input&quot;:&quot;select&quot;,&quot;name&quot;:&quot;TOTAL_BEDROOMS&quot;,&quot;type&quot;:&quot;INT&quot;},&quot;TOTAL_BATHS&quot;:{&quot;description&quot;:&quot;Bathrooms&quot;,&quot;enumeration&quot;:{&quot;1&quot;:&quot;1 Bathrooms&quot;,&quot;2&quot;:&quot;2 Bathrooms&quot;,&quot;3&quot;:&quot;3 Bathrooms&quot;,&quot;4&quot;:&quot;4 Bathrooms&quot;},&quot;hide&quot;:false,&quot;input&quot;:&quot;select&quot;,&quot;name&quot;:&quot;TOTAL_BATHS&quot;,&quot;type&quot;:&quot;FLOAT&quot;}}">
         
         			<!-- </fieldset> -->
-        			<div class="row align-justify align-middle">
-        				<div id="cancelSearchButton" class="shrink columns button hollow hide-for-medium">
-        					<span class="cancelSearch">CANCEL</span>
-        				</div>
-        				<div class="columns mrp-search-form-buttons-container button hollow"><!-- SEARCH BUTTON -->
-        					<input type="submit" id="finishSearchButton" name="finishSearch"  class=""
-        					value="SEARCH">
+        			<div class="small-12 columns">
+        				<div class="row align-center align-middle buttonWrap">
+        
+        					<div id="cancelSearchButton" class="small-4 medium-2 columns button hollow">
+        						<span class="cancelSearch">CANCEL</span>
+        					</div>
+        
+        					<div class="small-6 medium-3 columns mrp-search-form-buttons-container button hollow"><!-- SEARCH BUTTON -->
+        						<input type="submit" id="finishSearchButton" name="finishSearch"  class=""
+        						value="SEARCH">
+        					</div>
+        
         				</div>
         			</div>
         
@@ -1587,7 +1592,7 @@
         
           <h3 class="">Testimonials</h3>
           
-          <div class="orbit" role="region" aria-label="Testimonials for Brooke Alexander" data-orbit data-timer-delay="9000" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <div class="orbit" role="region" aria-label="Testimonials for Brooke Alexander" data-orbit data-timer-delay="10000" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
             
             <ul class="orbit-container testimonialContainer">
         
@@ -1616,6 +1621,7 @@
               <button data-slide="2"><span class="show-for-sr">Testimonial 3</span></button>
               <button data-slide="3"><span class="show-for-sr">Testimonial 4</span></button>
             </nav>
+        
           </div>
           
           <div class="halfBorder halfBorderBottom"></div>
